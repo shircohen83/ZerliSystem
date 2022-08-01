@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client_gui.CustomerViewOrdersController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="600.0" prefWidth="308.0" style="-fx-background-color: #D0F6DD;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #8AA493;">
+                     <children>
+                        <Label text="ZerLi ">
+                           <font>
+                              <Font name="Cambria Bold" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="0.0" prefWidth="298.0" />
+                  <Pane prefHeight="4.0" prefWidth="308.0" style="-fx-background-color: #123B4E;" />
+                  <VBox alignment="CENTER" prefHeight="166.0" prefWidth="294.0" styleClass="profile-layout" stylesheets="@CustomerPageStyle.css">
+                     <children>
+                        <ImageView fitHeight="129.0" fitWidth="150.0">
+                           <image>
+                              <Image url="@../javafx_images/userImageSideScreen.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="employeeName" text="Bob Alice" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets top="2.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Corbel Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="employeeType" text="Customer" textFill="#323232">
+                           <font>
+                              <Font name="Corbel Bold Italic" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="199.0" prefWidth="308.0" styleClass="profile-details" stylesheets="@CustomerPageStyle.css">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label text="Details:" textFill="#123b4e">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets left="1.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Telephone">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="phoneNumber" text="+972-524676188" textFill="#9a9a9a">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Account status">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="accountStatus" text="CONFIRMED" textFill="#9a9a9a">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="0.0" prefWidth="308.0" VBox.vgrow="ALWAYS" />
+                  <HBox alignment="CENTER" prefHeight="62.0" prefWidth="304.0">
+                     <children>
+                        <Button fx:id="backBtn" mnemonicParsing="false" onAction="#back" prefHeight="38.0" prefWidth="150.0" stylesheets="@Style.css" text="Back">
+                           <font>
+                              <Font name="Candara Bold" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="buttonBack" />
+                              <String fx:value="shadow" />
+                              <String fx:value="transparent" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="66.0" prefWidth="592.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="66.0" prefWidth="94.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="71.0" text="ZerLi Login">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Cambria Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="-83.70710754394531" endY="0.050252676010131836" startX="-80.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="66.0" prefWidth="116.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="98.0" text="Customer Menu">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Cambria Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="66.0" prefWidth="107.0">
+                           <children>
+                              <Line endX="-83.70710754394531" endY="0.050252676010131836" startX="-80.0">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Line>
+                              <Label prefHeight="17.0" prefWidth="88.0" text="View Orders" textFill="#cb0606">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="62.0" prefWidth="182.0">
+                           <children>
+                              <Label fx:id="timer">
+                                 <font>
+                                    <Font name="Cambria" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="62.0" prefWidth="188.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="62.0" prefWidth="85.0">
+                                 <children>
+
+                                    <Button fx:id="refreshBtn" mnemonicParsing="false" onAction="#refershScreenInfo" styleClass="buttonRefresh" stylesheets="@Style.css">
+
+                                       <graphic>
+                                          <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../javafx_images/icons8_restart_48px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children></HBox>
+                              <HBox alignment="CENTER" prefHeight="58.0" prefWidth="99.0">
+                                 <children>
+
+                                    <Button fx:id="infoBtn" mnemonicParsing="false" styleClass="buttonInfo" stylesheets="@Style.css">
+
+                                       <graphic>
+                                          <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../javafx_images/infoHelp.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="524.0" prefWidth="692.0">
+                     <children>
+                        <HBox prefHeight="349.0" prefWidth="707.0">
+                           <children>
+                              <TabPane prefHeight="457.0" prefWidth="691.0" styleClass="tab2-pane" stylesheets="@Style.css" tabClosingPolicy="UNAVAILABLE" HBox.hgrow="ALWAYS">
+                                <tabs>
+                                  <Tab text="Order History">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox prefHeight="396.0" prefWidth="687.0">
+                                                   <children>
+                                                      <VBox prefHeight="367.0" prefWidth="687.0">
+                                                         <children>
+                                                            <TableView fx:id="tableViewOrder" prefHeight="345.0" prefWidth="684.0" stylesheets="@Style.css" VBox.vgrow="ALWAYS">
+                                                               <columns>
+                                                                  <TableColumn fx:id="VieworderID" prefWidth="71.19994962215424" text="OrderID" />
+                                                                  <TableColumn fx:id="ViewBranchID" prefWidth="84.00012969970703" text="Branch" />
+                                                                  <TableColumn fx:id="viewStatus" prefWidth="102.400146484375" text="Status" />
+                                                                  <TableColumn fx:id="ViewPrice" minWidth="0.0" prefWidth="68.800048828125" text="Price" />
+                                                                  <TableColumn fx:id="VieworderDate" minWidth="0.0" prefWidth="145.5999755859375" text="Order Date" />
+                                                                  <TableColumn fx:id="ViewExpectDel" prefWidth="146.39999389648438" text="expected Delivery" />
+                                                                  <TableColumn fx:id="Viewshow" prefWidth="64.0" text="Show" />
+                                                               </columns>
+                                                            </TableView>
+                                                         </children>
+                                                      </VBox>
+                                                      <HBox prefHeight="100.0" prefWidth="200.0" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                    <Tab text="Order Cancel">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox layoutX="1.0" prefHeight="474.0" prefWidth="686.0">
+                                                   <children>
+                                                      <VBox prefHeight="367.0" prefWidth="687.0">
+                                                         <children>
+                                                            <TableView fx:id="tableCancelOrder" prefHeight="361.0" prefWidth="676.0" stylesheets="@Style.css" VBox.vgrow="ALWAYS">
+                                                               <columns>
+                                                                  <TableColumn fx:id="cancelOrderID" prefWidth="67.19994962215424" text="OrderID" />
+                                                                  <TableColumn fx:id="cancelBranchID" prefWidth="83.19995880126953" text="Branch" />
+                                                                  <TableColumn fx:id="cancelStatus" prefWidth="104.0" text="Status" />
+                                                                  <TableColumn fx:id="cancelPrice" minWidth="0.0" prefWidth="62.39990234375" text="Price" />
+                                                                  <TableColumn fx:id="cancelOrderDate" minWidth="0.0" prefWidth="149.60009765625" text="Order Date" />
+                                                                  <TableColumn fx:id="cancelExpectedDate" prefWidth="139.19992065429688" text="expected Delivery" />
+                                                                  <TableColumn fx:id="cancelShow" prefWidth="76.0" text="Show" />
+                                                               </columns>
+                                                            </TableView>
+                                                         </children>
+                                                      </VBox>
+                                                      <HBox prefHeight="67.0" prefWidth="686.0">
+                                                         <children>
+                                                            <HBox alignment="CENTER" prefHeight="64.0" prefWidth="297.0" HBox.hgrow="ALWAYS">
+                                                               <children>
+                                                                  <Button fx:id="removeCancelOrderBTN" mnemonicParsing="false" onAction="#cancelOrder" prefHeight="38.0" prefWidth="150.0" stylesheets="@Style.css" text="Order Cancel">
+                                                                     <font>
+                                                                        <Font name="Candara Bold" size="18.0" />
+                                                                     </font>
+                                                                     <styleClass>
+                                                                        <String fx:value="buttonBack" />
+                                                                        <String fx:value="shadow" />
+                                                                        <String fx:value="transparent" />
+                                                                     </styleClass>
+                                                                  </Button>
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" prefHeight="52.0" prefWidth="686.0">
+                                                         <children>
+                                                            <Label fx:id="massageLabelRemove" prefHeight="22.0" prefWidth="230.0" textFill="#cb0606">
+                                                               <font>
+                                                                  <Font name="Cambria Bold" size="16.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab text="Cancel requests">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox prefHeight="429.0" prefWidth="686.0">
+                                                   <children>
+                                                      <VBox prefHeight="367.0" prefWidth="687.0">
+                                                         <children>
+                                                            <TableView fx:id="tableCancelReqOrder" prefHeight="345.0" prefWidth="684.0" stylesheets="@Style.css" VBox.vgrow="ALWAYS">
+                                                               <columns>
+                                                                  <TableColumn fx:id="reqcancelOrderID" prefWidth="67.19994962215424" text="OrderID" />
+                                                                  <TableColumn fx:id="reqcancelBranchID" prefWidth="92.80005645751953" text="Branch" />
+                                                                  <TableColumn fx:id="reqcancelStatus" prefWidth="93.599853515625" text="Status" />
+                                                                  <TableColumn fx:id="reqcancelPrice" minWidth="0.0" prefWidth="62.39990234375" text="Price" />
+                                                                  <TableColumn fx:id="reqcancelOrderDate" minWidth="0.0" prefWidth="149.60009765625" text="Order Date" />
+                                                                  <TableColumn fx:id="reqcancelExpectedDate" prefWidth="146.39987182617188" text="expected Delivery" />
+                                                                  <TableColumn fx:id="reqcancelShow" prefWidth="71.2000732421875" text="Show" />
+                                                               </columns>
+                                                            </TableView>
+                                                         </children>
+                                                      </VBox>
+                                                      <HBox prefHeight="76.0" prefWidth="686.0">
+                                                         <children>
+                                                            <HBox alignment="CENTER" prefHeight="64.0" prefWidth="297.0" HBox.hgrow="ALWAYS" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </Tab>
+                                </tabs>
+                                 <HBox.margin>
+                                    <Insets left="2.0" right="2.0" />
+                                 </HBox.margin>
+                              </TabPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="19.0" prefWidth="692.0">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="96.0" prefWidth="328.0" />
+                        <HBox prefHeight="96.0" prefWidth="466.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="96.0" prefWidth="131.0" />
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="priceLabel" textFill="#cb0606">
+                                       <font>
+                                          <Font name="Cambria Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

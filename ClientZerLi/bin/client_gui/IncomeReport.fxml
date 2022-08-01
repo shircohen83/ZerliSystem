@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client_gui.IncomeReportController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="600.0" prefWidth="308.0" style="-fx-background-color: #D0F6DD;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #8AA493;" stylesheets="@Style.css">
+                     <children>
+                        <Label text="ZerLi ">
+                           <font>
+                              <Font name="Cambria Bold" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="0.0" prefWidth="298.0" />
+                  <Pane prefHeight="4.0" prefWidth="308.0" style="-fx-background-color: #123B4E;" />
+                  <VBox alignment="CENTER" prefHeight="166.0" prefWidth="294.0" styleClass="profile-layout" stylesheets="@CustomerPageStyle.css">
+                     <children>
+                        <ImageView fitHeight="129.0" fitWidth="150.0">
+                           <image>
+                              <Image url="@../javafx_images/userImageSideScreen.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="userName" text="Eran Smith" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets top="2.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Corbel Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="role" text=" Branch Manager" textFill="#323232">
+                           <font>
+                              <Font name="Corbel Bold Italic" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="199.0" prefWidth="308.0" styleClass="profile-details" stylesheets="@CustomerPageStyle.css">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label text="Details:" textFill="#123b4e">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets left="1.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Telephone">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="phoneNumber" text="+972-524667888" textFill="#9a9a9a">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Account status">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="accountStatus" text="CONFIRMED" textFill="#9a9a9a">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="branchTitleLabel">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="branch" textFill="#9a9a9a">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="0.0" prefWidth="308.0" VBox.vgrow="ALWAYS" />
+                  <HBox alignment="CENTER" prefHeight="62.0" prefWidth="304.0">
+                     <children>
+                        <Button fx:id="BackBtn" mnemonicParsing="false" onAction="#back" prefHeight="38.0" prefWidth="150.0" stylesheets="@Style.css" text="Back">
+                           <font>
+                              <Font name="Candara Bold" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="buttonBack" />
+                              <String fx:value="shadow" />
+                              <String fx:value="transparent" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="285.0" prefWidth="692.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox prefHeight="66.0" prefWidth="592.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="61.0" prefWidth="75.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="66.0" text="ZerLi Login">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="Cambria Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="48.0" prefWidth="14.0">
+                                 <children>
+                                    <Line endX="-76.2928466796875" endY="0.050252676010131836" startX="-80.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="61.0" prefWidth="134.0">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="127.0" text="Branch Manager Menu">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="Cambria Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="48.0" prefWidth="14.0">
+                                 <children>
+                                    <Line endX="-76.2928466796875" endY="0.050252676010131836" startX="-80.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="61.0" prefWidth="99.0">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="98.0" text="Income Report">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="Cambria Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children></HBox>
+                              <HBox alignment="CENTER" prefHeight="62.0" prefWidth="15.0">
+                                 <children>
+                                    <Line endX="-76.2928466796875" endY="0.050252676010131836" startX="-80.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="66.0" prefWidth="137.0">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="61.0" prefWidth="128.0">
+                                       <children>
+                                          <Label prefHeight="18.0" prefWidth="129.0" text="Income Report" textFill="#cb0606">
+                                             <HBox.margin>
+                                                <Insets left="5.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font name="Cambria Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children></HBox>
+                              <HBox alignment="CENTER" prefHeight="61.0" prefWidth="217.0">
+                                 <children>
+                                    <Label fx:id="timer" prefHeight="38.0" prefWidth="205.0" text="Time:" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Calibri Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children></HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="57.0" prefWidth="692.0">
+                           <children>
+                              <Label fx:id="incomeTitle" text="Zerli Karmiel - July's Income based on weeks" textFill="#11862a">
+                                 <font>
+                                    <Font name="Cambria Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="390.0" prefWidth="690.0">
+                           <children>
+                              <LineChart fx:id="IncomeLineChart" prefHeight="278.0" prefWidth="642.0" style="-fx-background-radius: 30;" stylesheets="@Style.css">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" styleClass="axis-label" stylesheets="@Style.css" tickLabelFill="WHITE">
+                                       <tickLabelFont>
+                                          <Font name="Cambria" size="12.0" />
+                                       </tickLabelFont>
+                                    </CategoryAxis>
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis label="Income (ILS)" side="LEFT" styleClass="axis-label" stylesheets="@Style.css" tickLabelFill="WHITE">
+                                       <tickLabelFont>
+                                          <Font name="Cambria Bold" size="12.0" />
+                                       </tickLabelFont>
+                                    </NumberAxis>
+                                </yAxis>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <styleClass>
+                                    <String fx:value="chart" />
+                                    <String fx:value="chart-plot-background" />
+                                 </styleClass>
+                              </LineChart>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="107.0" prefWidth="690.0">
+                           <children>
+                              <VBox prefHeight="148.0" prefWidth="264.0" style="-fx-border-color: #708090;">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="44.0" prefWidth="244.0" style="-fx-background-color: #66CDAA;">
+                                       <children>
+                                          <Label text="Best Day">
+                                             <font>
+                                                <Font name="Cambria" size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="162.0" prefWidth="231.0" style="-fx-background-color: #E0FFFF;">
+                                       <children>
+                                          <Label fx:id="bestDay" text="Thursday">
+                                             <font>
+                                                <Font name="Cambria Bold Italic" size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="148.0" prefWidth="264.0" style="-fx-border-color: #708090;">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="44.0" prefWidth="244.0" style="-fx-background-color: #66CDAA;">
+                                       <children>
+                                          <Label text="Worst Day">
+                                             <font>
+                                                <Font name="Cambria" size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="162.0" prefWidth="231.0" style="-fx-background-color: #E0FFFF;">
+                                       <children>
+                                          <Label fx:id="worstDay" text="Sunday">
+                                             <font>
+                                                <Font name="Cambria Bold Italic" size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="148.0" prefWidth="264.0" style="-fx-border-color: #708090;">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="44.0" prefWidth="244.0" style="-fx-background-color: #66CDAA;">
+                                       <children>
+                                          <Label text="Total Income">
+                                             <font>
+                                                <Font name="Cambria" size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="162.0" prefWidth="231.0" style="-fx-background-color: #E0FFFF;">
+                                       <children>
+                                          <Label fx:id="totalIncomeLabel" text="Week 3">
+                                             <font>
+                                                <Font name="Cambria Bold Italic" size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children></VBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,321 @@
+.transparent {
+	-fx-backgorund-color: rgba(0,0,0,0);
+}
+
+.shadow {
+	-fx-effect: dropShadow( three-pass-box , rgba(161, 161, 161, 1) , 8.0 , 0.0 , 0.0 , 8.0 );
+}
+
+.shadow2 {
+	-fx-effect: dropShadow( three-pass-box , rgba(161, 161, 161, 1) , 3.5 , 0.0 , 0.0 , 3.5 );
+}
+
+.buttonCatalog{
+	-fx-background-color: #D0F6DD;
+}
+
+.buttonCatalog:hover{
+	-fx-background-color: #8AA493;
+	-fx-text-fill: #FFFFFF;
+	-fx-cursor:hand;
+}
+
+.buttonCatalog:pressed{
+	-fx-background-color: #D0F6DD;
+	-fx-border-width: 30 0 0 30;
+}
+
+
+.buttonBack{
+	-fx-background-color: #FFFFFF;
+	-fx-background-radius: 30;
+}
+
+.buttonBack:hover{
+	-fx-background-color: #8AA493;
+	-fx-background-radius: 30;
+	-fx-cursor:hand;
+}
+
+.buttonBack:pressed{
+	-fx-background-color: #FFFFFF;
+	-fx-border-width: 30 0 0 30;
+}
+
+
+.buttonAddToCart{
+	-fx-background-color: #FFFFFF;
+	-fx-background-radius: 30;
+}
+
+.buttonAddToCart:hover{
+	-fx-background-color: #FFFFFF;
+	-fx-text-fill:#8E64FD;
+	-fx-background-radius: 30;
+	-fx-cursor:hand;
+}
+
+.buttonAddToCart:pressed{
+	-fx-background-color: #FFFFFF;
+	-fx-border-width: 30 0 0 30;
+}
+
+.buttonUpdate{
+	-fx-background-color: #FFFFFF;
+	-fx-background-radius: 30;
+}
+
+.buttonUpdate:hover{
+	-fx-background-color: #FF8E99;
+	-fx-background-radius: 30;
+	-fx-cursor:hand;
+}
+.buttonUpdate:pressed{
+	-fx-background-color: #FFFFFF;
+	-fx-border-width: 30 0 0 30;
+}
+
+
+.buttonConfirm{
+	-fx-background-color: #FFFFFF;
+	-fx-background-radius: 30;
+}
+
+.buttonConfirm:hover{
+	-fx-background-color: #17CF54;
+	-fx-background-radius: 30;
+	-fx-cursor:hand;
+}
+.buttonConfirm:pressed{
+	-fx-background-color: #FFFFFF;
+	-fx-border-width: 30 0 0 30;
+}
+
+
+.table-cell {     
+    -fx-padding: 0.5em 0.5em 0.1em 0.3em;
+    -fx-border-color: -fx-box-border -fx-box-border transparent transparent;  
+    -fx-font: 13px "Segoe UI";    
+    -fx-border-insets: 0;
+}
+
+
+.table-cell:hover {
+    -fx-background-color: #8AA493;
+}
+
+
+ 
+.table-row-cell:empty, .table-cell:empty:hover {
+    -fx-background-color: whitesmoke;
+}
+ 
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+
+
+.table-view:row-selection .table-row-cell:filled:hover { 
+    -fx-background-color: #B1B7C2;
+}
+
+
+.table-view:row-selection .table-row-cell:filled:selected:hover { 
+    -fx-background-color: #8A93A4;
+}
+
+
+.table-view:row-selection .table-row-cell:filled:selected { 
+    -fx-background-color: #B1B7C2;
+}
+
+
+.table-view, .table-view:focused {
+  -fx-background-color: transparent,-fx-box-border,-fx-control-inner-background;
+  -fx-background-insets: -1.4, 0, 1;
+  -fx-background-radius: 1.4, 0, 0;
+}
+ 
+
+.table-view .column-header .label{
+    -fx-text-fill: #000000;
+    -fx-alignment: CENTER;
+}
+
+
+.table-view .column-header:hover {
+    -fx-background-color: whitesmoke;
+}
+
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: white;    
+    -fx-size: 45;
+    -fx-border-color: -fx-box-border;
+    -fx-border-width: 0 1 3 0;
+    -fx-border-insets: 0;
+}
+
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+
+.table-view .show-hide-columns-button {
+    -fx-background-color: white;
+    -fx-border-color: -fx-box-border;
+    -fx-border-insets: 0;
+}
+
+.chart {
+    -fx-background-color: #708090;
+    -fx-font-size: 12;
+    -fx-text-fill: white;
+}
+
+.chart-plot-background {
+-fx-background-color: transparent;	
+}
+
+.axis-label {
+    -fx-text-fill: #FFFFFF;
+	-fx-legend-visible: false;
+	
+}
+
+.handHover:hover{
+	-fx-cursor:hand;
+}
+
+
+.tab-pane *.tab-header-area *.tab-header-background {
+  -fx-background-color:#F4F4F4;
+}
+
+.tab-pane {
+  -fx-tab-min-width:100px;
+  -fx-tab-max-width:100px;
+  -fx-tab-min-height:40px;
+  -fx-tab-max-height:40px;
+}
+ 
+.tab {
+  -fx-font-family: Segoe UI;
+  -fx-font-size: 13;
+  -fx-background-color:#C8C8C8 ;
+}
+
+.tab:selected {
+    -fx-background-color:#708090 ;
+}
+
+
+.tab2 {
+  -fx-font-family: Segoe UI;
+  -fx-font-size: 13;
+  -fx-background-color:#C8C8C8 ;
+}
+
+.tab2-pane {
+  -fx-tab-min-width:100px;
+  -fx-tab-max-width:100px;
+  -fx-tab-min-height:40px;
+  -fx-tab-max-height:40px;
+}
+
+.tab2-pane *.tab-header-area *.tab-header-background {
+  -fx-background-color:#F4F4F4;
+}
+ 
+
+.tab2:selected {
+    -fx-background-color:#708090 ;
+}
+
+
+.backgroundPopUpScroolPane{
+	-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #D0F6DD , #A5C4B0);
+}
+
+.buttonPopUp{
+	-fx-background-color: #37413A;
+	-fx-background-radius: 30;
+}
+
+.buttonPopUp:hover{
+	-fx-background-color: #677A6D;
+	-fx-background-radius: 30;
+	-fx-cursor:hand;
+}
+
+.buttonPopUp:pressed{
+	-fx-background-color: #37413A;
+	-fx-border-width: 30 0 0 30;
+}
+
+.buttonRefresh{
+	-fx-background-color: #37413A;
+	-fx-background-radius: 100;
+}
+
+.buttonRefresh:hover{
+	-fx-background-color: #677A6D;
+	-fx-background-radius: 100;
+	-fx-cursor:hand;
+}
+
+.buttonRefresh:pressed{
+	-fx-background-color: #37413A;
+	-fx-border-width: 30 0 0 30;
+}
+
+
+
+.buttonInfo{
+	-fx-background-color: #6691C7;
+	-fx-background-radius: 100;
+}
+
+.buttonInfo:hover{
+	-fx-background-color: #66869B;
+	-fx-background-radius: 100;
+	-fx-cursor:hand;
+}
+
+.buttonInfo:pressed{
+	-fx-background-color: #6691C7;
+	-fx-border-width: 30 0 0 30;
+}
+
+
+.backgroundConnectToServerScreen{
+	-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #D0F6DD , #A5C4B0);
+}
+
+.buttonConnectToServerScreen{
+	-fx-background-color: #239C9C;
+	-fx-background-radius: 30;
+}
+
+.buttonConnectToServerScreen:hover{
+	-fx-background-color: #07f7f7;
+	-fx-background-radius: 30;
+	-fx-cursor:hand;
+}
+
+.buttonConnectToServerScreen:pressed{
+	-fx-background-color: #239C9C;
+	-fx-border-width: 30 0 0 30;
+}
+
+
+
+
+
+
+
+
+
+

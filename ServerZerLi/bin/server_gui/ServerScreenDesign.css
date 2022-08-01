@@ -1,0 +1,26 @@
+
+.backgroundServerMainScreen{
+	-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #D0F6DD , #A5C4B0);
+}
+
+.button{
+	-fx-background-color: #239C9C;
+	-fx-background-radius: 30;
+}
+
+.button:hover{
+	-fx-background-color: #07f7f7;
+	-fx-background-radius: 30;
+	-fx-cursor:hand;
+}
+
+.button:pressed{
+	-fx-background-color: #239C9C;
+	-fx-border-width: 30 0 0 30;
+}
+
+
+
+
+
+

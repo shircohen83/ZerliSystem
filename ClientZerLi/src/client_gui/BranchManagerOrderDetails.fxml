@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client_gui.BranchManagerOrderDetailsController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="38.0" prefWidth="600.0">
+               <children>
+                  <Label text="Order Details" textFill="#11862a">
+                     <font>
+                        <Font name="Cambria Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="362.0" prefWidth="600.0">
+               <children>
+                  <TableView fx:id="Orders" prefHeight="338.0" prefWidth="507.0" HBox.hgrow="ALWAYS">
+                     <columns>
+                        <TableColumn fx:id="productIDCol" prefWidth="122.4000244140625" text="ProductID" />
+                        <TableColumn fx:id="nameCol" prefWidth="127.20001220703125" text="Name" />
+                        <TableColumn fx:id="priceCol" minWidth="3.199951171875" prefWidth="107.20001220703125" text="price" />
+                        <TableColumn fx:id="totalquantityCol" prefWidth="120.79998779296875" text="Total Quantity" />
+                        <TableColumn fx:id="quantityInCartCol" prefWidth="123.199951171875" text="Quantity In Cart" />
+                     </columns>
+                  </TableView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

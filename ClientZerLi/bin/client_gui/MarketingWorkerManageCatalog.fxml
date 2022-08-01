@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client_gui.MarketingWorkerManageCatalogController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="1006.0">
+         <children>
+            <BorderPane prefHeight="600.0" prefWidth="1006.0">
+               <left>
+                  <VBox prefHeight="600.0" prefWidth="308.0" style="-fx-background-color: #D0F6DD;" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #8AA493;">
+                           <children>
+                              <Label text="ZerLi ">
+                                 <font>
+                                    <Font name="Cambria Bold" size="40.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="0.0" prefWidth="298.0" />
+                        <Pane prefHeight="4.0" prefWidth="308.0" style="-fx-background-color: #123B4E;" />
+                        <VBox alignment="CENTER" prefHeight="166.0" prefWidth="294.0" styleClass="profile-layout" stylesheets="@CustomerPageStyle.css">
+                           <children>
+                              <ImageView fitHeight="129.0" fitWidth="150.0">
+                                 <image>
+                                    <Image url="@../javafx_images/userImageSideScreen.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="employeeName" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets top="2.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Corbel Bold" size="28.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="employeeType" textFill="#323232">
+                                 <font>
+                                    <Font name="Corbel Bold Italic" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="entryGreeting" alignment="CENTER" prefHeight="79.0" prefWidth="207.0" text="Welcome " textFill="#3c3131">
+                                 <font>
+                                    <Font name="Cambria" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="199.0" prefWidth="308.0" styleClass="profile-details" stylesheets="@CustomerPageStyle.css">
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <Label text="Details:" textFill="#123b4e">
+                                 <font>
+                                    <Font name="Corbel Bold" size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets left="1.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Telephone">
+                                 <font>
+                                    <Font name="Corbel Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="phoneNumber" textFill="#9a9a9a">
+                                 <font>
+                                    <Font name="Corbel Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Account status">
+                                 <font>
+                                    <Font name="Corbel Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="accountStatus" textFill="#9a9a9a">
+                                 <font>
+                                    <Font name="Corbel Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="0.0" prefWidth="308.0" VBox.vgrow="ALWAYS" />
+                        <HBox alignment="CENTER" prefHeight="62.0" prefWidth="304.0">
+                           <children>
+                              <Button fx:id="BackBtn" mnemonicParsing="false" onAction="#Back" prefHeight="38.0" prefWidth="150.0" stylesheets="@Style.css" text="Back">
+                                 <font>
+                                    <Font name="Candara Bold" size="18.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="buttonBack" />
+                                    <String fx:value="shadow" />
+                                    <String fx:value="transparent" />
+                                 </styleClass>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </left>
+               <center>
+                  <VBox prefHeight="600.0" prefWidth="713.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox prefHeight="66.0" prefWidth="592.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="66.0" prefWidth="230.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="250.0" text="ZerLi Login  -  Marketing Worker Menu  -">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="Cambria Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="165.0">
+                                 <children>
+                                    <Label text="Catalog Management" textFill="#cb0606">
+                                       <font>
+                                          <Font name="Cambria Bold" size="12.0" />
+                                       </font></Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="305.0">
+                                 <children>
+                                    <Label fx:id="timer">
+                                       <font>
+                                          <Font name="Cambria Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <VBox prefHeight="62.0" prefWidth="692.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="67.0" prefWidth="698.0">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" text="Catalog Managment" textAlignment="JUSTIFY" textFill="#11862a" textOverrun="CLIP">
+                                       <font>
+                                          <Font name="Cambria Bold Italic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" maxHeight="-Infinity" prefHeight="300.0" prefWidth="698.0">
+                                 <children>
+                                    <HBox prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <VBox prefHeight="220.0" prefWidth="56.0" HBox.hgrow="ALWAYS" />
+                                          <VBox prefHeight="220.0" prefWidth="594.0">
+                                             <children>
+                                                <TableView fx:id="productsTable" onMouseClicked="#chooseProduct" prefHeight="200.0" prefWidth="200.0" stylesheets="@Style.css" VBox.vgrow="ALWAYS">
+                                                  <columns>
+                                                    <TableColumn fx:id="productIDCol" prefWidth="65.0" text="productID" />
+                                                    <TableColumn fx:id="productNameCol" prefWidth="85.0" text="productname" />
+                                                      <TableColumn fx:id="priceCol" prefWidth="60.0" text="price" />
+                                                      <TableColumn fx:id="productTypeCol" text="productType" />
+                                                      <TableColumn fx:id="quantityCol" prefWidth="55.0" text="quantity" />
+                                                      <TableColumn fx:id="dominateColorCol" prefWidth="100.0" text="dominateColor" />
+                                                      <TableColumn fx:id="isOnSaleCol" prefWidth="60.0" text="isOnSale" />
+                                                      <TableColumn fx:id="priceAfterDiscountCol" prefWidth="85.0" text="discountPrice" />
+                                                  </columns>
+                                                </TableView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="220.0" prefWidth="50.0" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" prefHeight="56.0" prefWidth="698.0">
+                                 <children>
+                                    <HBox alignment="BOTTOM_CENTER" prefHeight="66.0" prefWidth="698.0">
+                                       <children>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" />
+                                          <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                                   <children>
+                                                      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                                         <children>
+                                                            <Label fx:id="responseLabel" prefHeight="18.0" prefWidth="74.0" textFill="#cb0606" HBox.hgrow="ALWAYS" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="BOTTOM_CENTER" prefHeight="66.0" prefWidth="698.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Button fx:id="removeButton" maxWidth="-Infinity" mnemonicParsing="false" onAction="#RemoveProductFromCatalog" prefWidth="70.0" stylesheets="@Style.css" text="remove">
+                                             <styleClass>
+                                                <String fx:value="buttonConfirm" />
+                                                <String fx:value="transparent" />
+                                                <String fx:value="shadow" />
+                                             </styleClass></Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" />
+                                    <VBox prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Button fx:id="addButton" maxWidth="-Infinity" mnemonicParsing="false" onAction="#AddNewProductToCatalog" prefWidth="70.0" stylesheets="@Style.css" text="add">
+                                             <styleClass>
+                                                <String fx:value="buttonConfirm" />
+                                                <String fx:value="transparent" />
+                                                <String fx:value="shadow" />
+                                             </styleClass></Button>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <VBox alignment="CENTER" prefHeight="62.0" prefWidth="698.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="698.0">
+                                             <children>
+                                                <HBox prefHeight="100.0" prefWidth="233.0" />
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="232.0">
+                                                   <children>
+                                                      <Button fx:id="saveBtn" maxWidth="-Infinity" mnemonicParsing="false" onAction="#SaveUpdates" prefHeight="40.0" prefWidth="80.0" stylesheets="@Style.css" text="Save">
+                                                         <styleClass>
+                                                            <String fx:value="buttonConfirm" />
+                                                            <String fx:value="transparent" />
+                                                            <String fx:value="shadow" />
+                                                         </styleClass>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="233.0">
+                                                   <children>
+                                                      <Label fx:id="successFailLbl">
+                                                         <font>
+                                                            <Font name="System Bold" size="12.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

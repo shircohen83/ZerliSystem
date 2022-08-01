@@ -1,0 +1,27 @@
+.profile-layout {
+	-fx-background-color: #8AA493;
+	-fx-background-radius: 0 0 50 50;
+}
+
+.profile-details {
+	-fx-background-color: #FFFFFF;
+}
+
+.buttonMenu{
+	-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #929D96 , #D0DDF6);
+	-fx-background-radius: 20;
+}
+
+.buttonMenu:hover{
+	-fx-background-color: #8AA493;
+	-fx-background-radius: 20;
+	-fx-cursor:hand;
+}
+
+.buttonMenu:pressed{
+	-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #929D96 , #D0DDF6);
+	-fx-background-radius: 20;
+}
+
+
+
